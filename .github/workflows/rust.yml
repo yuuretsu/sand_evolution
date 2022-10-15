@@ -8,6 +8,7 @@ jobs:
         uses: actions/checkout@v2.3.1
 
       - name: Install and Build 🔧
+        uses: jetli/wasm-pack-action@v0.3.0
         run: wasm-pack build --release --target web sand_evolution_lib
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
